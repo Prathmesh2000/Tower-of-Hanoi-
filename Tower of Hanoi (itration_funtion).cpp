@@ -79,7 +79,7 @@ void movement_Of_Disk(Stack* source, Stack* destination, char s, char d){
 	}
 }
 
-void a(int n, Stack* src, Stack* aux, Stack* dest){
+void itration(int n, Stack* src, Stack* aux, Stack* dest){
 	char source = 'A', auxilary = 'B', destination = 'C';
 	int total_moves = pow(2,n)-1;
 	
@@ -118,7 +118,7 @@ int main(){
 	aux.initilize(n);
 	destination.initilize(n);
 	
-	a(n, &source, &aux, &destination);
+	itration(n, &source, &aux, &destination);
 	
 	return 0;
 }
